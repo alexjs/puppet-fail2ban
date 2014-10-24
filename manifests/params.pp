@@ -48,5 +48,5 @@ class fail2ban::params {
   $jails_protocol = 'tcp'
   $jails_chain = 'INPUT'
   $jails = hiera("fail2ban::params::jails", ['ssh'] )
-  $mailto = hiera("fail2ban::params::mailto , 'root@localhost')
+  $mailto = hiera("fail2ban::params::mailto" , 'root@localhost')
 }
